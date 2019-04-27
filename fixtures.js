@@ -29,7 +29,7 @@ const run = async () => {
   const generateRandomProducts = () => {
       const cars = [];
       categories.map((cat, index) => {
-          for (let i = 0; i < library.getRndInteger(1, 10); i++) {
+          for (let i = 0; i < library.getRndInteger(20, 60); i++) {
               cars.push( {
                   title: `${cat.description} ${library.random(models)}`,
                   price: parseInt(`${library.getRndInteger(10, 200)}00`),
