@@ -32,7 +32,7 @@ const run = async () => {
           for (let i = 0; i < library.getRndInteger(1, 10); i++) {
               cars.push( {
                   title: `${cat.description} ${library.random(models)}`,
-                  price: parseInt(`${library.getRndInteger(4, 20)}00`),
+                  price: parseInt(`${library.getRndInteger(10, 200)}00`),
                   description: loremIpsum(),
                   category: cat._id,
                   seller: library.random(users)._id,
